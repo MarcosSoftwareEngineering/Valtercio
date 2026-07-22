@@ -1,0 +1,29 @@
+/* --- Animações --- */
+.fade-out { animation: fadeOut 1s ease-in-out forwards; }
+@keyframes fadeOut { 
+    0% { opacity: 1; } 
+    100% { opacity: 0; visibility: hidden; } 
+}
+
+.fade-in { animation: fadeIn 1.5s ease-in-out forwards; }
+@keyframes fadeIn { 
+    0% { opacity: 0; transform: translateY(20px); } 
+    100% { opacity: 1; transform: translateY(0); } 
+}
+
+/* --- Utilitários --- */
+body.no-scroll { overflow: hidden; }
+
+.logo-img { max-width: 260px; height: auto; }
+.logo-img-header { max-width: 150px; height: auto; }
+
+.step-num {
+    width: 2rem; 
+    height: 2rem; 
+    border-radius: 9999px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-weight: 800; 
+    flex-shrink: 0;
+}
